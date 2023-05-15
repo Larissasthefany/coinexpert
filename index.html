@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,21 +9,24 @@
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="stylesheet" href="src/css/responsive.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>NFT</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>COINEXPERT</title>
 </head>
+
 <body>
     <header>
-        <a href="#">
-            <h1 class="title">NFTEXPERT</h1>
-        </a>
-        <nav class="navigation">
-            <div class="nav-center">
-                <button class="nav-toggle">
-                    <i class="fas fa-sliders-h"></i>
-                </button>
+        <nav id="navbar">
+            <div class="logo">
+                <a href="#">
+                    <h1 class="active logo">COINEXPERT</h1>
+                </a>
             </div>
-            <ul class="links">
+            <div class="menu-icon" onclick="abrirMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="myLinks ">
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#">Mercado</a></li>
                 <li><a href="#">Conteúdo</a></li>
@@ -32,10 +36,57 @@
                 <li><a href="#">FAQ</a></li>
                 <li><a href="#" class="btn"><i class="fas fa-user-alt"></i>Entrar</a></li>
             </ul>
-        </div>
         </nav>
     </header>
 
-    <script src="js/header.js"></script>
+    <main>
+        <div class="container">
+            <div class="wrapper">
+                <div class="about">
+                    <h1 class="titulo">inscrições <br> abertas para <br> escola coins</h1>
+                    <p class="subtitulo">Entre agora mesmo para a escola digital de COINs
+                        <br> que mais cresce no mundo.
+                    </p>
+                </div>
+
+                <div class="box">
+                    <div>
+                        <p class="number">230+</p>
+                        <p>Alunos</p>
+                    </div>
+                    <div class="linha-vertical"></div>
+                    <div>
+                        <p class="number">48h+</p>
+                        <p>Conteudo</p>
+                    </div>
+                    <div class="linha-vertical"></div>
+                    <div>
+                        <p class="number">4+</p>
+                        <p>Estrelas</p>
+                    </div>
+                </div>
+                <button>Entrar Agora</button>
+            </div>
+            <div class="imagem">
+                <img src="src/img/gota.png" alt="gotinha">
+            </div>
+        </div>
+
+        <section class="mercado">
+            <div class="sobre-o-merecado">
+                <h2>
+                    O mercado de criptomoedas é altamente competitivo e dinâmico, com muitas oportunidades para lucrar, mas
+                    também riscos significativos envolvidos. A adoção de criptomoedas está aumentando, com grandes empresas
+                    e instituições financeiras começando a explorar seu uso. No entanto, o mercado ainda é altamente
+                    especulativo e arriscado, exigindo pesquisa e cuidado antes de investir. O sucesso em criptomoedas
+                    requer paciência, habilidade e disciplina.
+                </h2>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="src/js/header.js"></script>
 </body>
+
 </html>

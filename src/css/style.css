@@ -1,90 +1,253 @@
   @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chakra+Petch:ital,wght@0,400;0,500;1,500&family=Cormorant+Garamond:ital,wght@1,600&family=DynaPuff:wght@400;500;600&family=EB+Garamond:wght@400;500;600;700;800&family=Edu+VIC+WA+NT+Beginner:wght@400;500&family=Fira+Code:wght@300;400;500;600;700&family=Inconsolata:wght@200;400;500;600;800;900&family=Kumbh+Sans:wght@400;700&family=Lato:ital,wght@0,400;0,700;0,900;1,400&family=Lexend+Deca:wght@400;500;600;700;800;900&family=Manrope&family=Montserrat:wght@400;500;600;700;800&family=Mulish:wght@400;500;600;700;800;900&family=Noto+Sans+Chakma&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,600;1,700&family=Oswald:wght@400;600;700&family=Outfit:wght@300;400;600&family=Passion+One&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Poppins:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,300;0,500;0,700;0,800;1,300;1,500;1,700;1,800&family=Roboto+Mono:ital,wght@0,500;1,100&family=Roboto:wght@300;400;700&family=Silkscreen:wght@400;700&family=Square+Peg&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,700&family=VT323&display=swap');
 
-  :root{
-    --clr-white: #fff;
-    --clr-primary-1: hsl(205, 86%, 17%);
-    --clr-primary-2: hsl(205, 77%, 27%);
-    --clr-primary-3: hsl(205, 72%, 37%);
-    --clr-primary-4: hsl(205, 63%, 48%);
-    --clr-primary-5: hsl(205, 78%, 60%);
-    /* --transition: all 0.3s linear; */
-  }
-
-
   html,
   body {
-      font-family: 'Ubuntu', sans-serif;
-      background-color: #000;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #000;
+    min-height: 100vh;
+    color: #fff;
   }
 
-  header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 39px;
-      background-color: #101010;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px;
+    background-color: #101010;
+    width: 100%;
   }
 
-  header .title {
-      color: #fff;
+  header .logo,
+  .titulo {
+    background-image: linear-gradient(109.6deg, rgba(255, 78, 80, 1) 11.2%, rgba(249, 212, 35, 1) 100.2%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
-  nav .links {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+  .logo {
+    font-size: 2.1rem;
   }
 
-  .links li a {
-      padding: 13px;
-      transition: 0.3s ease-in-out;
-      margin-left: 1.4rem;
-      color: #ffffffbc;
-      border-radius: 5px;
-      font-size: 1rem;
-      text-transform: capitalize;
-      display: block;
+  nav ul li {
+    display: inline-block;
   }
 
-  .links a:hover {
-      background-color: rgba(128, 128, 128, 0.762);
-      color: #fff;
+  nav .myLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
   }
 
-
-  .links .btn {
-      background-color: rgba(82, 78, 78, 0.382);
-      padding: 13px 30px 13px 30px;
-      border-radius: 5px;
-      color: #fff;
+  .myLinks li a {
+    padding: 13px;
+    color: #ffffffbc;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-transform: capitalize;
   }
 
-  .links i {
-      font-size: 14px;
-      margin: 10px;
-      align-self: center;
+  .myLinks li a:hover {
+    background-color: rgba(128, 128, 128, 0.762);
+    color: #fff;
   }
 
-  .links {
-    height: 0;
-    overflow: hidden;
-  } 
+  .myLinks .btn {
+    background-color: rgba(82, 78, 78, 0.382);
+    padding: 13px 30px 13px 30px;
+    border-radius: 5px;
+    color: #fff;
+  }
+
+  .myLinks .btn:hover {
+    background-image: linear-gradient(109.6deg, rgba(255, 78, 80, 1) 11.2%, rgba(249, 212, 35, 1) 100.2%);
+  }
+
+  .myLinks i {
+    font-size: 14px;
+    margin: 10px;
+    align-self: center;
+  }
+
+  /* #navbar {
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    transition: all 0.3s ease-in-out;
+  }
   
-  
-  .nav-toggle {
-    font-size: 1.5rem;
-    color: var(--clr-primary-5);
-    background: transparent;
-    border-color: transparent;
-    transition: var(--transition);
+  #navbar.fixed {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  } */
+
+  .menu-icon {
+    display: none;
     cursor: pointer;
-  }
-  
-  .nav-toggle:hover {
-    color: var(--clr-primary-1);
-    transform: rotate(90deg);
+    font-size: 20px;
+    background: rgba(255, 78, 80, 1);
   }
 
-  .show-links {
-    height: 11rem;
+  .menu-icon {
+    filter: invert(1);
   }
+
+  .container {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    min-height: 100vh;
+    gap: 250px;
+    padding: 35px;
+    color: #ffffffbc;
+    /* margin-top:80px ; */
+  }
+
+  .about{
+    margin-top: 40px;
+  }
+
+  .container .titulo {
+    font-size: 3.4rem;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+
+  .container .subtitulo {
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+  }
+
+  .box {
+    display: flex;
+    /* justify-content: space-around; */
+    gap: 30px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+  }
+
+  .box .number {
+    color: #fff;
+    padding-bottom: 4px;
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+
+  .box p {
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+
+  .linha-vertical {
+    height: 40px;
+    border-right: 1px solid #ffffffbc;
+  }
+
+  button {
+    display: inline-block;
+    border-radius: 30px;
+    padding: 15px 40px;
+    color: #ffffffbc;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to right, #101010 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position: left bottom;
+    transition: all 0.3s ease-in-out;
+  }
+
+  button:hover {
+    background-position: right bottom;
+    background-image: linear-gradient(109.6deg, rgba(255, 78, 80, 1) 11.2%, rgba(249, 212, 35, 1) 100.2%);
+  }
+
+  button {
+    display: inline-block;
+    border-radius: 30px;
+    padding: 15px 40px;
+    color: #ffffffbc;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to right, #101010 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position: left bottom;
+    transition: all 0.3s ease-in-out;
+  }
+
+  button:hover {
+    background-position: right bottom;
+    background-image: linear-gradient(109.6deg, rgba(255, 78, 80, 1) 11.2%, rgba(249, 212, 35, 1) 100.2%);
+  }
+
+  .imagem {
+    position: relative;
+    animation: levitar 2s infinite ease-in-out;
+  }
+
+  img {
+    width: 330px;
+  }
+
+  @keyframes levitar {
+    0% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-20px);
+    }
+
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  /* .imagem {
+    position: absolute;
+    top: 0;
+    left: 70%;
+    transform: translateX(-50%);
+    animation: cair 2s ease-in-out forwards;
+  }
+
+  @keyframes cair {
+    0% {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      transform: translate(-50%, calc(100% - 50px));
+      opacity: 1;
+    }
+  } */
+
+  .mercado{
+    display: flex;
+    align-items: center;
+    gap: 250px;
+    padding: 35px;
+    color: #ffffffbc;
+  }
+
+  .sobre-o-merecado{
+    width: 600px;
+    text-align: start;
+  }
+
+ 
+  
+  
