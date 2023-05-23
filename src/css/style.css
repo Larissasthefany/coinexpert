@@ -240,7 +240,9 @@
     align-items: center;
     gap: 250px;
     padding: 35px;
-    color: #ffffffbc;
+    /* color: #ffffffbc; */
+    font-weight: 400;
+    font-size: 0.9rem;
   }
 
   .sobre-o-merecado{
